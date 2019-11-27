@@ -106,4 +106,14 @@
             android:summary="@string/fastcharge_summary"
             android:title="@string/fastcharge_title" />
     </androidx.preference.PreferenceCategory>
+
+    <androidx.preference.PreferenceCategory
+        android:title="@string/sound_title">
+
+        <androidx.preference.PreferenceScreen
+            android:title="@string/dirac_title"
+            android:summary="@string/dirac_title">
+            <intent android:action="org.omnirom.device.DiracActivity"/>
+        </androidx.preference.PreferenceScreen>
+    </androidx.preference.PreferenceCategory>
 </androidx.preference.PreferenceScreen>

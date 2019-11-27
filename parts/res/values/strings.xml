@@ -66,4 +66,7 @@
     <string name="seekbar_default_value_set">Value set to default of <xliff:g id="number">%d</xliff:g></string>
     <string name="seekbar_default_value_already_set">Default value is already set</string>
 
+    <!-- Mi Sound -->
+    <string name="sound_title">Sound</string>
+
 </resources>
