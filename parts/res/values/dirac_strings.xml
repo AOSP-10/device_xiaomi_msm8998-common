@@ -42,4 +42,10 @@
     <string name="dirac_preset_country">Country</string>
     <string name="dirac_preset_dance">Dance</string>
     <string name="dirac_preset_metal">Metal</string>
+
+    <!-- Label for feature switch [CHAR LIMIT=30] -->
+    <string name="switch_bar_on">On</string>
+
+    <!-- Label for feature switch [CHAR LIMIT=30] -->
+    <string name="switch_bar_off">Off</string>
 </resources>

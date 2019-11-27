@@ -17,18 +17,8 @@
 package org.omnirom.device;
 
 import android.app.ActionBar;
-import android.app.Activity;
-import android.content.Context;
-import android.content.DialogInterface;
-import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Handler;
-import android.support.v14.preference.PreferenceFragment;
-import android.support.v14.preference.SwitchPreference;
-import android.support.v7.preference.ListPreference;
-import android.support.v7.preference.Preference;
-import android.support.v7.preference.PreferenceCategory;
-import android.support.v7.preference.Preference.OnPreferenceChangeListener;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
@@ -37,10 +27,14 @@ import android.widget.CompoundButton;
 import android.widget.Switch;
 import android.widget.TextView;
 
-import com.xiaomi.settings.R;
+import androidx.preference.ListPreference;
+import androidx.preference.Preference;
+import androidx.preference.PreferenceFragment;
 
-public class DiracSettingsFragment extends PreferenceFragment implements
-        OnPreferenceChangeListener, CompoundButton.OnCheckedChangeListener {
+import org.omnirom.device.utils.DiracUtils;
+
+public final class DiracSettingsFragment extends PreferenceFragment implements
+        Preference.OnPreferenceChangeListener, CompoundButton.OnCheckedChangeListener {
 
     private static final String PREF_HEADSET = "dirac_headset_pref";
     private static final String PREF_PRESET = "dirac_preset_pref";
@@ -76,7 +70,7 @@ public class DiracSettingsFragment extends PreferenceFragment implements
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        final View view = LayoutInflater.from(getContext()).inflate(R.layout.dirac,
+        final View view = LayoutInflater.from(getContext()).inflate(R.layout.dirac_fragment,
                 container, false);
         ((ViewGroup) view).addView(super.onCreateView(inflater, container, savedInstanceState));
         return view;
@@ -122,14 +116,11 @@ public class DiracSettingsFragment extends PreferenceFragment implements
         mTextView.setText(getString(isChecked ? R.string.switch_bar_on : R.string.switch_bar_off));
         if (isChecked){
             mSwitchBar.setEnabled(false);
-            mHandler.postDelayed(new Runnable() {
-                @Override
-                public void run() {
-                    try{
-                        mSwitchBar.setEnabled(true);
-                        setEnabled(isChecked);
-                    }catch(Exception ignored){
-                    }
+            mHandler.postDelayed(() -> {
+                try{
+                    mSwitchBar.setEnabled(true);
+                    setEnabled(isChecked);
+                }catch(Exception ignored){
                 }
             }, 1020);
         }else{

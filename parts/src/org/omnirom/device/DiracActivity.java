@@ -17,17 +17,13 @@
 package org.omnirom.device;
 
 import android.os.Bundle;
-import android.preference.PreferenceActivity;
 
-public class DiracActivity extends PreferenceActivity {
-
-    private static final String TAG_DIRAC = "dirac";
+public final class DiracActivity extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        getFragmentManager().beginTransaction().replace(android.R.id.content,
-                new DiracSettingsFragment(), TAG_DIRAC).commit();
+        setContentView(R.layout.dirac_activity);
     }
 }

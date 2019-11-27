@@ -27,6 +27,7 @@
         android:layout_width="match_parent"
         android:layout_height="?android:attr/actionBarSize"
         android:clickable="true"
+        android:background="@drawable/switchbar_background"
         android:gravity="center"
         android:paddingStart="16dp"
         android:paddingEnd="16dp">
