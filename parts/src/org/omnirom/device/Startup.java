@@ -31,6 +31,7 @@ import org.omnirom.device.Preference.FastChargePreference;
 import org.omnirom.device.Preference.S2SVibratorStrengthPreference;
 import org.omnirom.device.Preference.SpectrumPreference;
 import org.omnirom.device.Preference.SweepToSleepPreference;
+import org.omnirom.device.utils.DiracUtils;
 
 public final class Startup extends BroadcastReceiver {
 
@@ -48,6 +49,11 @@ public final class Startup extends BroadcastReceiver {
             SpectrumPreference.FEATURE.restore(sp);
 
             DisplayCalibration.restore(sp);
+            
+            try {
+                new DiracUtils(context).onBootCompleted();
+            } catch (Exception e) {
+            }
         }
     }
 }
