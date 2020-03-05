@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2019 The Evolution X Project
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Button that copies the url to the log of a crashed application -->
+    <string name="aerr_copy">复制崩溃日志 URL</string>
+    <string name="url_copy_success">URL 复制成功</string>
+    <string name="url_copy_failed">An error occured while uploading the log to dogbin</string>
+
+    <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permlab_fakePackageSignature">模拟安装包签名</string>
+    <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permdesc_fakePackageSignature">允许应用伪装成为其他应用。恶意应用程序可以借此来访问隐私应用程序数据。请小心授予此权限！</string>
+
+    <!-- Advanced reboot -->
+    <string name="reboot_to_recovery_title">恢复模式</string>
+    <string name="reboot_to_recovery_message">重启到恢复模式\u2026</string>
+    <string name="reboot_to_bootloader_title">引导模式</string>
+    <string name="reboot_to_bootloader_message">重启到引导模式\u2026</string>
+    <string name="reboot_title">重新启动</string>
+    <string name="reboot_message">正在重新启动\u2026</string>
+
+    <!-- LiveDisplay strings -->
+    <string name="live_display_auto">自动</string>
+    <string name="live_display_auto_summary">在日出和日落后自动调节屏幕色温</string>
+    <string name="live_display_off">关闭</string>
+    <string name="live_display_off_summary">禁用所有调整</string>
+    <string name="live_display_day">白天</string>
+    <string name="live_display_day_summary">仅使用白天设置</string>
+    <string name="live_display_night">夜晚</string>
+    <string name="live_display_night_summary">仅使用夜晚设置</string>
+    <string name="live_display_outdoor">户外（阳光）</string>
+    <string name="live_display_outdoor_summary">仅使用户外设置</string>
+    <string name="live_display_hint">LiveDisplay 可以帮助降低眼睛疲劳，并有助于您的夜间睡眠，点击此处尝试它！</string>
+    <string name="accessibility_quick_settings_live_display_off">LiveDisplay 关闭</string>
+    <string name="accessibility_quick_settings_live_display_auto">LiveDisplay：自动模式</string>
+    <string name="accessibility_quick_settings_live_display_day">LiveDisplay：白天模式</string>
+    <string name="accessibility_quick_settings_live_display_night">LiveDisplay：夜晚模式</string>
+    <string name="accessibility_quick_settings_live_display_outdoor">LiveDisplay：户外模式</string>
+    <string name="accessibility_quick_settings_live_display_changed_off">LiveDisplay 已关闭</string>
+    <string name="accessibility_quick_settings_live_display_changed_auto">LiveDisplay 已修改为自动模式</string>
+    <string name="accessibility_quick_settings_live_display_changed_day">LiveDisplay 已修改为白天模式</string>
+    <string name="accessibility_quick_settings_live_display_changed_night">LiveDisplay 已修改为夜晚模式</string>
+    <string name="accessibility_quick_settings_live_display_changed_outdoor">LiveDisplay 已修改为户外模式</string>
+
+    <!-- Pocket Lock --> 
+    <string name="pocket_lock_message_long_press">按住电源按键来解锁</string>
+
+    <!-- Alert slider proc nodes paths. -->
+    <string name="alert_slider_state_path"></string>
+    <string name="alert_slider_uevent_match_path"></string>
+
+    <!-- Gaming mode -->
+    <string name="notification_channel_gaming">游戏模式</string>
+    <string name="gaming_mode_notification_title">游戏模式已启用</string>
+    <string name="gaming_mode_notification_content">点击关闭游戏模式</string>
+    <string name="gaming_mode_enabled_toast">游戏模式已开启</string>
+    <string name="gaming_mode_disabled_toast">游戏模式已关闭</string>
+
+</resources>
