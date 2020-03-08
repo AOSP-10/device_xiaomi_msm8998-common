@@ -171,6 +171,10 @@ PRODUCT_PACKAGES += \
     android.hardware.memtrack@1.0-service \
     android.hardware.renderscript@1.0-impl
 
+PRODUCT_PACKAGES += \
+    vendor.display.config@1.9 \
+    vendor.display.config@1.9.vendor
+
 # Doze
 PRODUCT_PACKAGES += \
     XiaomiDoze \
@@ -184,8 +188,7 @@ PRODUCT_PACKAGES += \
 
 # Fingerprint sensor
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.1-service.xiaomi_msm8998 \
-    move_fingerprint_data.sh
+    android.hardware.biometrics.fingerprint@2.1-service.xiaomi_msm8998
 
 # For config.fs
 PRODUCT_PACKAGES += \
@@ -328,8 +331,7 @@ PRODUCT_PACKAGES += \
     init.panel_info.sh \
     init.qcom.early_boot.sh \
     init.qcom.post_boot.sh \
-    init.qcom.sh \
-    move_widevine_data.sh
+    init.qcom.sh
 
 # RCS
 PRODUCT_PACKAGES += \
