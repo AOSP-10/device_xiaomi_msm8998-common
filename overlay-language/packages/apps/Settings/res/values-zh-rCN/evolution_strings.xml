@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?> <!--
+<?xml version="1.0" encoding="utf-8"?>
+<!--
     Copyright (C) 2019-2020 The Evolution X Project
 
     Licensed under the Apache License, Version 2.0 (the "License");
@@ -30,6 +31,7 @@
     <string name="back_height_high_label">底部</string>
     <string name="back_options_dialog_title">选项</string>
     <string name="back_height_message">用作返回手势的可触区域的屏幕高度。</string>
+    <string name="back_block_ime_message">虚拟键盘的块高度作为后手势的可触摸区域。</string>
 
     <!-- Strings for suggestion card's close button [CHAR LIMIT=20] -->
     <string name="suggestion_button_close">关</string>
@@ -37,8 +39,8 @@
     <!-- Battery temp -->
     <string name="battery_temp_title">电池温度</string>
 
-    <!-- Evolution Settings -->
-    <string name="evolution_settings_title">Evolution 设置</string>
+    <!-- The Evolver -->
+    <string name="evolution_settings_title">The Evolver</string>
     <string name="evolution_settings_summary">开始定制你的设备吧</string>
 
     <!-- Charging vibration -->
@@ -183,7 +185,7 @@
     <string name="custom_light_title">指示灯颜色</string>
     <string name="custom_light_on_time_title">呼吸灯闪烁时亮灯时间 (毫秒)</string>
     <string name="custom_light_off_time_title">屏幕关闭时指示灯闪烁间隔时间 (毫秒)\"</string>
-    <string name="value_equals_默认ault">def</string>
+    <string name="value_equals_default">def</string>
 
     <!-- Smart charging -->
     <string name="smart_charging_title">智能充电</string>
@@ -273,15 +275,59 @@
     <string name="tethering_allow_vpn_upstreams_title">允许客户端使用VPN</string>
     <string name="tethering_allow_vpn_upstreams_summary">允许热点客户端使用此设备\u2019 用于上游连接的VPN连接</string>
 
-    <!-- Control Vibration intensities -->
-    <string name="vibration_intensity_ringer">铃声振动强度</string>
-    <string name="vibration_intensity_notification">通知振动强度</string>
-    <string name="vibration_intensity_haptic">触控反馈振动强度</string>
-
     <!-- Gestures: Touchscreen gestures -->
     <string name="touchscreen_gesture_settings_title">触摸屏手势</string>
     <string name="touchscreen_gesture_settings_summary">执行各种触摸屏手势以进行快速操作</string>
 
     <!-- Enable/Disable Screenshot sound -->
     <string name="screenshot_sound_title">屏幕截图声音</string>
+
+    <string name="lockscreen_display_title">锁屏显示</string>
+
+    <!-- In-call feedback -->
+    <string name="incall_feeedback_vibrate_title">通话中震动</string>
+    <string name="incall_feeedback_summary">振动以指示通话状态</string>
+
+    <!-- Custom Vibration fragment -->
+    <string name="vibration_preferences">振动 &amp; 触觉</string>
+    <string name="summary_vibration_preferences">改变强度，样式等</string>
+    <string name="keywords_vibration_preferences">振动模式，振动强度，通话，触觉</string>
+    <string name="ringtone_vibration_pattern">铃声振动模式</string>
+    <string name="vibration_intensity_ringer">铃声振动强度</string>
+    <string name="vibration_intensity_notification">通知振动强度</string>
+    <string name="vibration_intensity_disabled">禁用</string>
+    <string name="vibration_intensity_light">轻微</string>
+    <string name="vibration_intensity_medium">中等</string>
+    <string name="vibration_intensity_strong">强烈</string>
+    <string name="vibration_intensity_custom">自定义</string>
+    <string name="pattern_dzzz_dzzz">dzzz-dzzz</string>
+    <string name="pattern_dzzz_da">dzzz-da</string>
+    <string name="pattern_mm_mm_mm">mm-mm-mm</string>
+    <string name="pattern_da_da_dzzz">da-da-dzzz</string>
+    <string name="pattern_da_dzzz_da">da-dzzz-da</string>
+
+    <!-- Notification log -->
+    <string name="notification_log_summary">显示通知历史记录日志</string>
+
+    <!-- Improvements to Night Light -->
+    <string name="unknown_night_light_time">未知 - 按下即可更新</string>
+    <string name="night_display_location_text">\n\n从日落到日出的时间表需要启用的位置服务才能获取您所在位置的正确时间。</string>
+
+    <!-- Android debugging -->
+    <string name="adb_enable">Android 调试</string>
+    <string name="adb_enable_summary">启用 Android Debug Bridge (ADB) 接口</string>
+
+    <!-- Android debugging notification -->
+    <string name="adb_notify">调试通知</string>
+    <string name="adb_notify_summary">已开启 USB 或网络调试通知</string>
+
+    <!-- Android debugging over network -->
+    <string name="adb_over_network">网络 ADB 调试</string>
+    <string name="adb_over_network_summary">通过网络接口 (Wi\u2011Fi，USB 网络) 启用 TCP/IP 调试。该设置重启后失效</string>
+    <string name="adb_over_network_warning">警告：当网络 ADB 调试启用时，您的设备将在所有已连接的网络上接收指令！\n\n请只在您信任的网络中启用此功能。\n\n您真的要开启这个功能吗？</string>
+
+    <!-- Home handle sizing -->
+    <string name="home_handle_sizer_title">手势条尺寸</string>
+    <string name="home_handle_low_label">小 (AOSP)</string>
+    <string name="home_handle_high_label">长</string>
 </resources>

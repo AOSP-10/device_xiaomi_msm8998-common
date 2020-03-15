@@ -47,12 +47,11 @@
     <!-- Summaries -->
     <string name="aosp_gesture_summary">安卓自带的原生手势</string>
     <string name="animation_summary">改变动画样式</string>
-    <string name="buttons_summary">调整按键的活动</string>
     <string name="gestures_summary">基于手势的选项/动作</string>
     <string name="lockscreen_summary">控制你的锁屏项目</string>
     <string name="misc_summary">游戏模式和其他系统设置</string>
-    <string name="notifications_summary">弹出式通知，通知预览，边缘闪光，通话提醒选项</string>
     <string name="navigation_summary">自定义导航栏样式和行为</string>
+    <string name="notifications_summary">弹出式通知，通知预览，边缘闪光，通话提醒选项</string>
     <string name="powermenu_summary">自定义你的电源键菜单</string>
     <string name="quicksettings_summary">修改快速设置栏的标题、布局、主题、亮度滑块</string>
     <string name="statusbar_summary">自定义你的状态栏项目</string>
@@ -479,6 +478,12 @@
     <!-- Charging animation -->
     <string name="lockscreen_charging_animation_title">充电动画</string>
     <string name="lockscreen_charging_animation_summary">当充电时在锁屏下方显示动画</string>
+    <string name="lockscreen_charging_animation_off">Off</string>
+    <string name="lockscreen_charging_animation_flash">Flash</string>
+    <string name="lockscreen_charging_animation_battery">Battery</string>
+    <string name="lockscreen_charging_animation_drop">Drop</string>
+    <string name="lockscreen_charging_animation_explosion">Explosion</string>
+    <string name="lockscreen_charging_animation_water">Water</string>
 
     <!-- Statusbar Clock Font Style, Size & Color -->
     <string name="status_bar_clock_font_style_title">时钟字体样式</string>
@@ -629,6 +634,14 @@
     <string name="quick_settings_vibrate_title">触摸振动</string>
     <string name="quick_settings_vibrate_summary">按下快速设置磁贴时振动</string>
 
+    <!-- Per App aspect Ratio -->
+    <string name="aspect_ratio_apps_enabled_title">启用缩放</string>
+    <string name="aspect_ratio_apps_enabled_summary">允许旧式应用程序使用全屏显示</string>
+    <string name="aspect_ratio_apps_list_summary"></string>
+    <string name="aspect_ratio_apps_list_title">允许使用缩放的应用程序</string>
+    <string name="aspect_ratio_category_title">旧式应用程序缩放</string>
+    <string name="aspect_ratio_apps_info">更改后需要重新启动应用程序</string>
+
     <!-- Gaming mode -->
     <string name="gaming_mode_title">游戏模式</string>
     <string name="gaming_mode_summary">自定义游戏模式偏好</string>
@@ -711,14 +724,14 @@
     <string name="qs_footer_text_string_summary">留空则保持默认</string>
 
     <!-- Horizon Light -->
-    <string name="horizon_light_screen_title">Screen</string>
-    <string name="horizon_light_title">Horizon light</string>
-    <string name="horizon_light_summary">Light up the side edges of the screen on notification pulse</string>
-    <string name="horizon_light_auto_color_title">Auto color</string>
-    <string name="horizon_light_auto_color_summary">Sets horizon light color to the primary color of wallpaper</string>
-    <string name="horizon_light_color_title">Horizon light color</string>
-    <string name="horizon_light_duration_title">Duration</string>
-    <string name="horizon_light_duration_summary">Sets the horizon light animation duration</string>
+    <string name="horizon_light_screen_title">屏幕</string>
+    <string name="horizon_light_title">地平线灯</string>
+    <string name="horizon_light_summary">在通知脉冲上照亮屏幕的侧边缘</string>
+    <string name="horizon_light_auto_color_title">自动色彩</string>
+    <string name="horizon_light_auto_color_summary">将地平线光颜色设置为墙纸的原色</string>
+    <string name="horizon_light_color_title">地平线灯颜色</string>
+    <string name="horizon_light_duration_title">持续时间</string>
+    <string name="horizon_light_duration_summary">设置地平线灯光动画的持续时间</string>
 
     <!-- Battery Styles -->
     <string name="battery_style_category_title">电量值</string>
@@ -849,16 +862,17 @@
     <string name="no_stat_because_reset_state">按重置开始收集状态数据中的时间</string>
     <string name="no_stat_because_reset_wakelock">按重置开始收集唤醒锁数据</string>
     <string name="no_stat_because_plugged">请拔下电源以获取唤醒数据</string>
-    <string name="no_states_file_found">No states file found. Are you sure your phone is
-        compatible?\n\nIf you are running a custom ROM or kernel, try
-        contacting its developer to inform him that the states file is not
-        readable.</string>
+    <string name="no_states_file_found">没有找到状态文件。确认你的手机是否兼容？ \n\nIf 你正在运行一个自定义的 ROM 或内核，试着联系开发者并通知他状态文件不可读。</string>
     <string name="deep_sleep">"深度睡眠"</string>
     <string name="mt_refresh">刷新</string>
     <string name="mt_share">分享</string>
     <string name="mt_reset">重置</string>
     <string name="time_in_state_title">状态时间</string>
     <string name="time_in_state_summary">显示CPU频率统计信息</string>
+
+    <!-- Media art -->
+    <string name="media_art_title">媒体封面</string>
+    <string name="media_art_summary">在锁屏上启用媒体封面</string>
 
     <!-- Lockscreen cover art filter -->
     <string name="lockscreen_cover_filter_title">锁屏专辑封面过滤器</string>
@@ -890,10 +904,6 @@
     <string name="flashlight_on_call_wait_title">呼叫等待闪光</string>
     <string name="flashlight_on_call_wait_summary">当有通话在等待时闪光</string>
 
-    <!-- ADB debugging notifications -->
-    <string name="adb_notify">ADB通知</string>
-    <string name="adb_notify_summary">在启用android调试时显示通知</string>
-
     <!-- Dashboard Suggestions & Conditions -->
     <string name="dashboard_conditions_title">内容注释</string>
     <string name="summary_dashboard_conditions_enabled">内容注释已启用</string>
@@ -923,6 +933,7 @@
     <string name="screenshot_type_title">截屏样式</string>
     <string name="screenshot_type_fullscreen">全屏截图</string>
     <string name="screenshot_type_partial">拖动你想要的区域作为截屏</string>
+    <string name="screenshot_type_fullscreen_longshot">全屏显示截图扩展</string>
 
     <!-- Custom headers -->
     <string name="custom_header_pick_summary">从预装的图片集中选择图片</string>
@@ -1072,6 +1083,7 @@
     <string name="lockscreen_clock_default_accent_hour">Default (accent hours)</string>
     <string name="lockscreen_clock_sammy">Sammy</string>
     <string name="lockscreen_clock_sammy_bold">Sammy (粗体)</string>
+    <string name="lockscreen_clock_sammy_accent">Sammy (accent)</string>
     <string name="lockscreen_clock_sammy_accent_hour">Sammy (小时强调色)</string>
     <string name="lockscreen_clock_sammy_accent_min">Sammy (分钟强调色)</string>
     <string name="lockscreen_clock_text">Text (Android 9)</string>
@@ -1098,15 +1110,13 @@
     <string name="qs_blur_intensity_title">模糊强度</string>
     <string name="qs_blur_intensity_summary">设置模糊强度／半径</string>
 
-    <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the setting which enables overlays to customize the statusbar icon -->
-    <string name="theme_customization_sysui_icon_title">状态栏图标</string>
-
     <!-- Launch music player when headset is connected -->
     <string name="headset_connect_player_title">连接耳机自动启动</string>
     <string name="headset_connect_player_summary">连接耳机时启动默认音乐程序</string>
 
     <!-- Themes customization -->
     <string name="theme_customization_systemui_title">色桶</string>
+    <string name="theme_customization_sysui_icon_title">状态栏图标</string>
 
     <!-- Title for the new device identifier access restrictions -->
     <string name="device_identifier_access_restrictions_title">禁用设备标识符限制</string>
@@ -1126,4 +1136,8 @@
     <!-- Alert Slider Notifications (OnePlus devices) -->
     <string name="alert_slider_notifications_title">警报滑块通知</string>
     <string name="alert_slider_notifications_summary">更改警报滑块位置时显示通知</string>
+
+    <!-- Kill app long-press back -->
+    <string name="kill_app_longpress_back">关闭进程</string>
+    <string name="kill_app_longpress_back_summary">长按返回按钮关闭前台应用程序</string>
 </resources>
