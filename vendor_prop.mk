@@ -57,7 +57,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.audio.feature.fm.enable=true \
     vendor.audio.feature.hdmi_edid.enable=false \
     vendor.audio.feature.hdmi_passthrough.enable=false \
-    vendor.audio.feature.hfp.enable=false \
+    vendor.audio.feature.hfp.enable=true \
     vendor.audio.feature.hifi_audio.enable=false \
     vendor.audio.feature.hwdep_cal.enable=false \
     vendor.audio.feature.incall_music.enable=false \
@@ -98,16 +98,15 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Bluetooth
 PRODUCT_PROPERTY_OVERRIDES += \
-    vendor.qcom.bluetooth.soc=cherokee \
-    ro.bluetooth.hfp.ver=1.6
+    vendor.qcom.bluetooth.soc=cherokee
 
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.camera.eis.enable=1 \
     persist.camera.set.afd=4 \
+    persist.camera.stats.test=5 \
     persist.camera.xm.green.b=0.96 \
     persist.camera.xm.green.r=0.97 \
-    persist.ts.rtmakeup=false \
     persist.vendor.camera.HAL3.enabled=1 \
     persist.vendor.camera.set.afd=4 \
     vidc.enc.dcvs.extra-buff-count=2 \
@@ -135,7 +134,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # DPM
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.vendor.dpm.feature=0
+    persist.vendor.dpm.feature=1 \
+    persist.vendor.dpm.nsrm.bkg.evt=3955
 
 # FRP
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -189,8 +189,6 @@ PRODUCT_ODM_PROPERTIES += \
 
 # Radio
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.radio.apm_sim_not_pwdn=1 \
-    persist.radio.dynamic_sar=false \
     persist.radio.multisim.config=dsds \
     persist.rmnet.data.enable=true \
     persist.vendor.data.mode=concurrent \
@@ -210,7 +208,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Sensors
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.qti.sensors.taptap_gesture=true \
     ro.vendor.sdk.sensors.gestures=false \
     ro.vendor.sensors.cfos=false \
     ro.vendor.sensors.cmc=false \
@@ -223,7 +220,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.sensors.pmd=false \
     ro.vendor.sensors.pug=true \
     ro.vendor.sensors.spg=false \
-    ro.vendor.sensors.sta_detect=true
+    ro.vendor.sensors.sta_detect=true \
+    ro.vendor.sensors.taptap_gesture=true
 
 # SurfaceFlinger
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
